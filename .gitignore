@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Playwright persisted login state (do not commit credentials)
+/sessions/*
+!/sessions/.gitkeep
