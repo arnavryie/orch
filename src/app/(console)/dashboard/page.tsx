@@ -370,7 +370,7 @@ export default function DashboardPage() {
                             <motion.span animate={{ opacity: [0.3, 1, 0.3] }} transition={{ duration: 1.2, repeat: Infinity, delay: 0.4 }}>●</motion.span>
                           </span>
                         ) : (
-                          <span style={{ whiteSpace: "pre-wrap" }}>{r.output}</span>
+                          <span className="whitespace-pre-wrap">{r.output}</span>
                         )}
                       </div>
 

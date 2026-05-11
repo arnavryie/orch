@@ -89,7 +89,7 @@ export function AppSidebar() {
         </div>
         <div className="flex flex-col gap-0.5 px-2 mb-4">
           {recentSessions.length === 0 ? (
-            <p style={{ color: '#5a5a5a', fontSize: '12px', padding: '0 12px' }}>
+            <p className="text-[#5a5a5a] text-xs px-3">
               No sessions yet
             </p>
           ) : (
@@ -106,13 +106,7 @@ export function AppSidebar() {
                       : "text-muted hover:bg-surface-hover/60 hover:text-white"
                   )}
                 >
-                  <span style={{ 
-                    overflow: 'hidden', 
-                    textOverflow: 'ellipsis', 
-                    whiteSpace: 'nowrap',
-                    display: 'block',
-                    width: '100%'
-                  }}>
+                  <span className="truncate block w-full">
                     {s.title || 'Untitled session'}
                   </span>
                 </Link>

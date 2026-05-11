@@ -102,6 +102,7 @@ export default function SettingsPage() {
                     type="text"
                     value={settings.displayName}
                     onChange={(e) => updateSetting("displayName", e.target.value)}
+                    aria-label="Display Name"
                     className="w-[200px] bg-[#1a1a1a] border border-[#333333] rounded-md px-3 py-1.5 text-zinc-200 focus:outline-none focus:border-zinc-500 text-sm"
                   />
                 </div>
@@ -116,6 +117,7 @@ export default function SettingsPage() {
                     type="text"
                     disabled
                     value="your@email.com"
+                    aria-label="Email"
                     className="w-[200px] bg-[#1a1a1a] border border-[#333333] rounded-md px-3 py-1.5 text-zinc-500 cursor-not-allowed text-sm"
                   />
                 </div>
@@ -134,6 +136,7 @@ export default function SettingsPage() {
                 <select
                   value={settings.primaryResearchModel}
                   onChange={(e) => updateSetting("primaryResearchModel", e.target.value)}
+                  aria-label="Primary research model"
                   className="bg-[#1a1a1a] border border-[#333333] rounded-md px-3 py-1.5 text-zinc-200 focus:outline-none focus:border-zinc-500 text-sm w-[150px]"
                 >
                   <option value="chatgpt">ChatGPT</option>
@@ -148,6 +151,7 @@ export default function SettingsPage() {
                 <select
                   value={settings.primaryWritingModel}
                   onChange={(e) => updateSetting("primaryWritingModel", e.target.value)}
+                  aria-label="Primary writing model"
                   className="bg-[#1a1a1a] border border-[#333333] rounded-md px-3 py-1.5 text-zinc-200 focus:outline-none focus:border-zinc-500 text-sm w-[150px]"
                 >
                   <option value="claude">Claude</option>
@@ -162,6 +166,7 @@ export default function SettingsPage() {
                 <select
                   value={settings.primaryFormattingModel}
                   onChange={(e) => updateSetting("primaryFormattingModel", e.target.value)}
+                  aria-label="Primary formatting model"
                   className="bg-[#1a1a1a] border border-[#333333] rounded-md px-3 py-1.5 text-zinc-200 focus:outline-none focus:border-zinc-500 text-sm w-[150px]"
                 >
                   <option value="gemini">Gemini</option>

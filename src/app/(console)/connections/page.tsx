@@ -89,8 +89,7 @@ export default function ConnectionsPage() {
       <main className="flex-1 p-8 overflow-y-auto max-w-[900px] mx-auto w-full pt-12">
         <div className="mb-12 text-center">
           <h3
-            className="text-4xl text-[#e5e2e1] mb-2"
-            style={{ fontFamily: "ui-serif, Georgia, serif", fontWeight: 400 }}
+            className="text-4xl text-[#e5e2e1] mb-2 font-serif font-normal"
           >
             Connections
           </h3>

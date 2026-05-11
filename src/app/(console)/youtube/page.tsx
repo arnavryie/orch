@@ -234,6 +234,7 @@ export default function YoutubeSummaryPage() {
                 <select
                   value={selectedStyle}
                   onChange={(e) => setSelectedStyle(e.target.value as StyleType)}
+                  aria-label="Summary Style"
                   className="w-full bg-[#1a1a1a] border border-zinc-700 rounded-xl px-3 py-2 text-sm text-zinc-300 focus:outline-none focus:border-zinc-500 transition-colors cursor-pointer"
                 >
                   {STYLES.map((s) => (
